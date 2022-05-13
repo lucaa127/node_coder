@@ -19,7 +19,8 @@ block formulario
           th(scope="row")=data.id
           td=data.title
           td=data.price
-          td=data.thumbnail 
+          td
+           img(width='50' heigh='50' src=data.thumbnail) 
      else
       span.badge.bg-info.text-dark.p-4="No hay productos registrados"
       br

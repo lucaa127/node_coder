@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head')%>
+</head>
+<body>
+    
+
 
 <section class="p-4" style="border:solid 1px; background-color:rgb(246, 255, 253); width:90%; margin:auto;">
 
@@ -22,7 +30,7 @@
                 <th scope="row"><%=prod.id%></th>
                 <td><%=prod.title%></td>
                 <td><%=prod.price%></td>
-                <td><%=prod.thumbnail%></td>
+                <td><img width="50" height="50" src="<%=prod.thumbnail%>"> </td>
                 </tr>
 
                 <% } %>
@@ -40,3 +48,6 @@
     <br><a href="/">Registrar productos</a>
     
     </section>
+
+</body>
+</html>
